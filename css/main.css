@@ -42,12 +42,17 @@ a {
     color: #5e5e5e;
 }
 
+section {
+    width: 90%;
+    margin: auto;
+}
+
 #wrapper {
     background: #ffffff url(../img/img05.jpg) repeat;
 }
 
 .container {
-    margin: 0px auto;
+    margin: auto;
 }
 
 /* Header */
@@ -55,16 +60,14 @@ a {
     overflow: hidden;
 }
 
-#header {
-    height: 150px;
-    margin: 0 auto;
-    padding: 0px 0px;
+header {
+    margin: auto;
 }
 
 
 /* Logo */
 #logo {
-    float: left;
+
     width: 300px;
     margin: 0;
     padding: 0;
@@ -79,12 +82,11 @@ a {
 
 #logo h1 a {
     color: #1f1f1f;
-    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 #logo p {
     margin: 0;
-    padding: 0px 0 0 0px;
     letter-spacing: -1px;
     font: normal 18px Georgia, "Times New Roman", Times, serif;
     font-style: italic;
@@ -102,82 +104,31 @@ a {
     color: #000000;
 }
 
-
-/* Splash */
-#splash {
-    width: 960px;
-    height: 300px;
-    margin: 0px auto;
-}
-
-/* Search */
-#search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 2px 5px;
-    border: 1px solid #e7ebed;
-    background: #ffffff;
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-    color: #5d781d;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #b9b9b9;
-    color: #000000;
-}
-
-
 /* Menu */
 #menu {
-    float: right;
-    width: 500px;
-    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
 
 #menu ul {
-    float: right;
     margin: 0;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0 0 0;
     list-style: none;
     line-height: normal;
 }
 
 #menu li {
-    float: left;
+    display: inline;
 }
 
 #menu a {
-    display: block;
+    display: inline-block;
     line-height: 100px;
     margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
     text-decoration: none;
     text-align: center;
-    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -186,7 +137,8 @@ a {
     border: none;
 }
 
-#menu a:hover, #menu .current_page_item a {
+#menu a:hover,
+#menu .current_page_item a {
     background: url(../img/img01.jpg) repeat;
     text-decoration: none;
     color: #ffffff;
@@ -194,19 +146,13 @@ a {
 
 
 /* Page */
-#page {
-    margin: 0 auto;
-    padding: 30px 0px;
+main {
+    margin: auto;
+    width: 95%;
 }
 
 
 /* Content */
-#content {
-    float: right;
-    width: 660px;
-    padding: 0px 0px 0px 0px;
-}
-
 .post {
     overflow: hidden;
     margin-bottom: 40px;
@@ -214,7 +160,7 @@ a {
 }
 
 .post .title {
-    padding: 7px 0px 0px 0px;
+    padding: 7px 0 0 0;
     letter-spacing: -1px;
 }
 
@@ -226,23 +172,16 @@ a {
 
 .post .meta {
     margin-bottom: 30px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
     text-align: left;
     font-family: 'Abel', sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
 
-.post .meta .date {
-    float: left;
-}
-
-.post .meta .posted {
-    float: right;
-}
 
 .post .entry {
-    padding: 0px 0px 40px 0px;
+    padding: 0 0 40px 0;
     text-align: justify;
 }
 
@@ -253,7 +192,6 @@ a {
 
 .more {
     display: block;
-    float: left;
     width: 88px;
     padding: 5px 5px;
     margin-right: 10px;
@@ -265,7 +203,6 @@ a {
 
 .comments {
     display: block;
-    float: left;
     width: 88px;
     padding: 5px 5px;
     background: #222222;
@@ -277,10 +214,7 @@ a {
 
 /* Sidebar */
 #sidebar {
-    float: left;
-    width: 270px;
-    margin: 0px;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0 0 0;
 }
 
 #sidebar ul {
@@ -295,14 +229,12 @@ a {
 }
 
 #sidebar li ul {
-    margin: 0px 0px;
     padding-bottom: 30px;
 }
 
 #sidebar li li {
     line-height: 40px;
     border-bottom: 1px solid #e7ebed;
-    margin: 0px 0px;
     border-left: none;
 }
 
@@ -315,20 +247,19 @@ a {
 }
 
 #sidebar li li a {
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
 #sidebar h2 {
     height: 38px;
-    padding: 0px 0px 30px 0px;
-    letter-spacing: -.5px;
+    padding: 0 0 30px 0;
+    letter-spacing: -0.5px;
     font-size: 1.8em;
     color: #222222;
 }
 
 #sidebar p {
-    margin: 0 0px;
     padding: 0 30px 20px 30px;
     text-align: justify;
 }
@@ -345,7 +276,7 @@ a {
 /* Three Column Footer Content */
 #footer-content {
     overflow: hidden;
-    margin: 0px auto;
+    margin: auto;
     color: #d6e2f0;
 }
 
@@ -355,13 +286,12 @@ a {
 
 #footer-bg {
     overflow: hidden;
-    padding: 30px 0px;
+    padding: 30px 0;
     background: #e8e8e8;
 }
 
 #footer-content h2 {
-    margin: 0px;
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 20px 0;
     letter-spacing: -1px;
     font-size: 26px;
     color: #262626;
@@ -369,34 +299,28 @@ a {
 
 
 #footer-content #fbox1 {
-    float: left;
     width: 300px;
     margin-right: 50px;
 }
 
 #footer-content #fbox2 {
-    float: left;
     width: 300px;
 }
 
 #footer-content #fbox3 {
-    float: right;
     width: 300px;
 }
 
 #column1 {
-    float: left;
     width: 290px;
     margin-right: 30px;
 }
 
 #column2 {
-    float: left;
     width: 280px;
 }
 
 #column3 {
-    float: right;
     width: 260px;
 }
 
@@ -404,13 +328,12 @@ a {
 /* Footer */
 #footer {
     height: 140px;
-    margin: 0 auto;
+    margin: auto;
     padding: 50px 0 15px 0;
     font-family: 'Abel', sans-serif;
 }
 
 #footer p {
-    margin: 0;
     padding-top: 10px;
     letter-spacing: 1px;
     line-height: normal;
@@ -427,30 +350,24 @@ a {
 #marketing {
     overflow: hidden;
     margin-bottom: 30px;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0 10px 0;
     border-top: 1px solid #e7ebed;
     border-bottom: 1px solid #e7ebed;
 }
 
 #marketing .text1 {
-    float: left;
-    margin: 0px;
-    padding: 0px;
     letter-spacing: -2px;
     text-transform: lowercase;
     font-size: 34px;
     color: #345e9b;
 }
 
-#marketing .text2 {
-    float: right;
-}
 
 #marketing .text2 a {
     display: block;
     width: 252px;
     height: 38px;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0 0 0;
     background: url(../img/img07.jpg) no-repeat left top;
     letter-spacing: -2px;
     text-align: center;
@@ -470,8 +387,6 @@ a {
 }
 
 .list-style1 {
-    margin: 0px;
-    padding: 0px;
     list-style: none;
 }
 
