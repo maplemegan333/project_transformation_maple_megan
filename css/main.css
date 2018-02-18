@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -58,6 +58,16 @@ section {
 }
 
 /* Header */
+#banner {
+    margin: auto;
+    background: url(../img/img03.png) no-repeat left bottom;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Logo */
 #logo {
@@ -125,12 +135,9 @@ article {
     border-bottom: 1px solid #e7ebed;
 }
 
-article .title {
+article .title a {
     padding: 7px 0 0 0;
     letter-spacing: -1px;
-}
-
-article .title a {
     border: none;
     text-decoration: none;
     color: #222222;
@@ -141,10 +148,18 @@ article .meta {
     padding: 10px 0 0 0;
     text-align: left;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
+article .meta a {
+    text-decoration: none;
+}
+
+article .meta time,
+article .meta span {
+    display: block;
+}
 
 article .entry {
     padding: 0 0 40px 0;
@@ -156,8 +171,9 @@ article .entry {
     margin-bottom: 30px;
 }
 
-.more {
-    display: block;
+.more,
+.comments {
+    display: inline-block;
     width: 88px;
     padding: 5px 5px;
     margin-right: 10px;
@@ -167,138 +183,54 @@ article .entry {
     text-decoration: none;
 }
 
-.comments {
-    display: block;
-    width: 88px;
-    padding: 5px 5px;
-    background: #222222;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-}
-
 /* Sidebar */
-#sidebar {
+aside {
     padding: 30px 0 0 0;
 }
 
-#sidebar ul {
-    margin: 0;
-    padding: 0;
+aside ul {
     list-style: none;
 }
 
-#sidebar li {
-    margin: 0;
-    padding: 0;
-}
-
-#sidebar li ul {
+aside li ul {
     padding-bottom: 30px;
 }
 
-#sidebar li li {
+aside li li {
     line-height: 40px;
     border-bottom: 1px solid #e7ebed;
     border-left: none;
 }
 
-#sidebar li li span {
-    display: block;
-    margin-top: -20px;
-    padding: 0;
-    font-size: 11px;
-    font-style: italic;
-}
-
-#sidebar li li a {
+aside li li a {
     padding: 0 0 0 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
-#sidebar h2 {
-    height: 38px;
+aside h2 {
     padding: 0 0 30px 0;
     letter-spacing: -0.5px;
     font-size: 1.8em;
     color: #222222;
 }
 
-#sidebar p {
-    padding: 0 30px 20px 30px;
-    text-align: justify;
-}
-
-#sidebar a {
+aside a {
     border: none;
+    text-decoration: none;
 }
 
-#sidebar a:hover {
+aside a:hover {
     text-decoration: underline;
 }
 
-
-/* Three Column Footer Content */
-#footer-content {
-    overflow: hidden;
-    margin: auto;
-    color: #d6e2f0;
-}
-
-#footer-content a {
-    color: #92a9b6;
-}
-
-#footer-bg {
-    overflow: hidden;
-    padding: 30px 0;
-    background: #e8e8e8;
-}
-
-#footer-content h2 {
-    padding: 0 0 20px 0;
-    letter-spacing: -1px;
-    font-size: 26px;
-    color: #262626;
-}
-
-
-#footer-content #fbox1 {
-    width: 300px;
-    margin-right: 50px;
-}
-
-#footer-content #fbox2 {
-    width: 300px;
-}
-
-#footer-content #fbox3 {
-    width: 300px;
-}
-
-#column1 {
-    width: 290px;
-    margin-right: 30px;
-}
-
-#column2 {
-    width: 280px;
-}
-
-#column3 {
-    width: 260px;
-}
-
-
 /* Footer */
-#footer {
-    height: 140px;
+footer {
     margin: auto;
     padding: 50px 0 15px 0;
     font-family: 'Abel', sans-serif;
 }
 
-#footer p {
+footer p {
     padding-top: 10px;
     letter-spacing: 1px;
     line-height: normal;
@@ -306,55 +238,4 @@ article .entry {
     text-transform: uppercase;
     text-align: center;
     color: #5e5e5e;
-}
-
-#footer a {
-    color: #5e5e5e;
-}
-
-#marketing {
-    overflow: hidden;
-    margin-bottom: 30px;
-    padding: 20px 0 10px 0;
-    border-top: 1px solid #e7ebed;
-    border-bottom: 1px solid #e7ebed;
-}
-
-#marketing .text1 {
-    letter-spacing: -2px;
-    text-transform: lowercase;
-    font-size: 34px;
-    color: #345e9b;
-}
-
-
-#marketing .text2 a {
-    display: block;
-    width: 252px;
-    height: 38px;
-    padding: 15px 0 0 0;
-    background: url(../img/img07.jpg) no-repeat left top;
-    letter-spacing: -2px;
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 30px;
-    color: #ffffff;
-}
-
-#banner {
-    margin: auto;
-    background: url(../img/img03.png) no-repeat left bottom;
-}
-
-#banner img {
-    width: 100%;
-    height: auto;
-}
-
-.list-style1 {
-    list-style: none;
-}
-
-.list-style1 a {
-    color: #7f7f7f;
 }
