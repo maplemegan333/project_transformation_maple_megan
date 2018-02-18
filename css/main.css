@@ -31,7 +31,9 @@ h3 {
     font-size: 1.6em;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
     margin-top: 0;
     line-height: 180%;
 }
@@ -462,10 +464,13 @@ a {
 }
 
 #banner {
-    margin: 0px auto;
-    width: 1000px;
-    height: 340px;
+    margin: auto;
     background: url(../img/img03.png) no-repeat left bottom;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
 }
 
 .list-style1 {
