@@ -40,7 +40,15 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }
 
 h3 {
@@ -68,6 +76,7 @@ section {
 
 #wrapper {
     background: #ffffff url(../img/img05.jpg) repeat;
+    max-width: 1500px;
 }
 
 /* Header */
@@ -298,6 +307,5 @@ footer p {
     #wrapper {
         margin: auto;
         padding: 2%;
-        max-width: 1800px;
     }
 }
