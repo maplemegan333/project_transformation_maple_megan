@@ -254,13 +254,40 @@ footer p {
 
 @media (min-width: 1200px) {
 
-    header{
+    header {
         overflow: hidden;
+        margin-bottom: 5vh;
     }
 
     #logo {
         width: 90%;
         margin-top: 5%;
         position: left bottom;
+    }
+
+    main {
+        width: 90%;
+        overflow: hidden;
+        max-width: 1500px;
+    }
+
+    section {
+        float: right;
+        width: 60%;
+    }
+
+    aside {
+        float: left;
+        width: 20%;
+    }
+
+    article {
+        max-width: 1000px;
+    }
+
+    #wrapper {
+        margin: auto;
+        padding: 2%;
+        max-width: 1800px;
     }
 }
