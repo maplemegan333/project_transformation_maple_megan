@@ -70,6 +70,8 @@ section {
 #banner {
     margin: auto;
     background: url(../img/img03.png) no-repeat left bottom;
+    max-height: 330px;
+    overflow: hidden;
 }
 
 #banner img {
@@ -240,4 +242,25 @@ footer p {
     text-transform: uppercase;
     text-align: center;
     color: #5e5e5e;
+}
+
+@media (min-width: 800px) {
+
+    nav {
+        text-align: right;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    header{
+        overflow: hidden;
+    }
+
+    #logo {
+        width: 90%;
+        margin-top: 5%;
+        position: left bottom;
+    }
 }
