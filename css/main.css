@@ -62,6 +62,10 @@ section {
     margin: auto;
 }
 
+.tops {
+    text-align: center;
+}
+
 #wrapper {
     background: #ffffff url(../img/img05.jpg) repeat;
 }
@@ -130,7 +134,7 @@ nav .current_page_item a {
 }
 
 /* Page */
-main {
+#main {
     margin: auto;
     width: 95%;
 }
@@ -147,6 +151,7 @@ article .title a {
     letter-spacing: -1px;
     text-decoration: none;
     color: #222222;
+    font-size: 2.8rem;
 }
 
 article .meta {
@@ -194,25 +199,30 @@ aside {
     padding: 30px 0 0 0;
 }
 
+aside section {
+    width: auto;
+    margin: 0;
+}
+
 aside ul {
     list-style: none;
 }
 
-aside li ul {
+aside section ul {
     padding-bottom: 30px;
 }
 
-aside li li {
+aside section li {
     line-height: 40px;
     border-bottom: 1px solid #e7ebed;
 }
 
-aside li li a {
+aside section li a {
     padding: 0 0 0 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
-aside h2 {
+aside h3 {
     padding: 0 0 30px 0;
     letter-spacing: -0.5px;
     font-size: 1.8rem;
